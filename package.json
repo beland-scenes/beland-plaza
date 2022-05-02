@@ -1,0 +1,19 @@
+{
+  "name": "beland-plaza",
+  "version": "1.0.0",
+  "description": "My new Beland project",
+  "scripts": {
+    "start": "bld start",
+    "build": "build-ecs",
+    "watch": "build-ecs --watch",
+    "beland:now": "bld deploy",
+    "ecs:install": "npm install --save-dev beland-ecs@latest",
+    "ecs:install-next": "npm install --save-dev beland-ecs@next"
+  },
+  "devDependencies": {
+    "beland-ecs": "^0.0.4-dev"
+  },
+  "dependencies": {
+    "beland": "^1.0.1"
+  }
+}
