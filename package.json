@@ -11,7 +11,7 @@
     "ecs:install-next": "npm install --save-dev beland-ecs@next"
   },
   "devDependencies": {
-    "beland-ecs": "^0.0.4-dev"
+    "beland-ecs": "^0.0.6-dev"
   },
   "dependencies": {
     "beland": "^1.0.1"

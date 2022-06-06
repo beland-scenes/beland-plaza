@@ -1,8 +1,72 @@
-let center = new Entity()
-center.addComponent(new GLTFShape('models/center.glb'))
-center.addComponent(
+
+let gara = new Entity()
+gara.addComponent(new GLTFShape('models/gara.glb'))
+gara.addComponent(
   new Transform({
-    rotation: Quaternion.Euler(0, 0, 0),
+    rotation: Quaternion.Euler(0, 180, 0),
   })
-)
-engine.addEntity(center)
+) 
+engine.addEntity(gara)
+
+
+
+let treeHouse = new Entity()
+treeHouse.addComponent(new GLTFShape('models/Tree_House.glb'))
+treeHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(treeHouse)
+
+
+let tree = new Entity()
+tree.addComponent(new GLTFShape('models/Tree.glb'))
+tree.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(tree)
+
+
+
+let street = new Entity()
+street.addComponent(new GLTFShape('models/Street.glb'))
+street.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(street)
+
+
+
+
+let pentagonHouse = new Entity()
+pentagonHouse.addComponent(new GLTFShape('models/Pentagon_House.glb'))
+pentagonHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(pentagonHouse)
+
+let bookStore = new Entity()
+bookStore.addComponent(new GLTFShape('models/BookStore.glb'))
+bookStore.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(bookStore)
+
+
+let oneColumnHouse = new Entity()
+oneColumnHouse.addComponent(new GLTFShape('models/OneColumnHouse.glb'))
+oneColumnHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+) 
+engine.addEntity(oneColumnHouse)
