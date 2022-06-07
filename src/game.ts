@@ -96,3 +96,22 @@ smartStore.addComponent(
   })
 );
 engine.addEntity(smartStore);
+
+
+let flyStore = new Entity();
+flyStore.addComponent(new GLTFShape("models/Fly_Store.glb"));
+flyStore.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(flyStore);
+
+let earthHouse = new Entity();
+earthHouse.addComponent(new GLTFShape("models/Earth_House.glb"));
+earthHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(earthHouse);
