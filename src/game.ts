@@ -172,3 +172,23 @@ mediaHouse.addComponent(
 engine.addEntity(mediaHouse);
 
 
+let lobby = new Entity();
+lobby.addComponent(new GLTFShape("models/Lobby.glb"));
+lobby.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(lobby);
+
+let boxHouse = new Entity();
+boxHouse.addComponent(new GLTFShape("models/Box_House.glb"));
+boxHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(boxHouse);
+
+
+
