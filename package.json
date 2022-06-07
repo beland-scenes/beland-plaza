@@ -6,7 +6,7 @@
     "start": "bld start",
     "build": "build-ecs",
     "watch": "build-ecs --watch",
-    "beland:now": "bld deploy",
+    "deploy": "bld deploy",
     "ecs:install": "npm install --save-dev beland-ecs@latest",
     "ecs:install-next": "npm install --save-dev beland-ecs@next"
   },
