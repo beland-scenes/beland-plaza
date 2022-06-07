@@ -115,3 +115,36 @@ earthHouse.addComponent(
   })
 );
 engine.addEntity(earthHouse);
+
+
+let tokioHouse = new Entity();
+tokioHouse.addComponent(new GLTFShape("models/Tokio_House.glb"));
+tokioHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(tokioHouse);
+
+
+
+let shop = new Entity();
+shop.addComponent(new GLTFShape("models/Shop.glb"));
+shop.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(shop);
+
+
+
+let circleShop = new Entity();
+circleShop.addComponent(new GLTFShape("models/CircleShop.glb"));
+circleShop.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(circleShop);
+
