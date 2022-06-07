@@ -140,11 +140,35 @@ engine.addEntity(shop);
 
 
 let circleShop = new Entity();
-circleShop.addComponent(new GLTFShape("models/CircleShop.glb"));
+circleShop.addComponent(new GLTFShape("models/Circle_Shop.glb"));
 circleShop.addComponent(
   new Transform({
     rotation: Quaternion.Euler(0, 180, 0),
   })
 );
 engine.addEntity(circleShop);
+
+
+
+
+let artHouse = new Entity();
+artHouse.addComponent(new GLTFShape("models/Art_House.glb"));
+artHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(artHouse);
+
+
+
+let mediaHouse = new Entity();
+mediaHouse.addComponent(new GLTFShape("models/Media_House.glb"));
+mediaHouse.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(mediaHouse);
+
 
