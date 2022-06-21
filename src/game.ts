@@ -1,3 +1,52 @@
+import { placeDoors } from "./modules/doors";
+
+let collider = new Entity();
+collider.addComponent(new GLTFShape("models/Collider.glb"));
+collider.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(collider);
+
+
+let ground = new Entity();
+ground.addComponent(new GLTFShape("models/Ground.glb"));
+ground.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(ground);
+
+let tree01 = new Entity();
+tree01.addComponent(new GLTFShape("models/Tree_01.glb"));
+tree01.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(tree01);
+
+let tree02 = new Entity();
+tree02.addComponent(new GLTFShape("models/Tree_02.glb"));
+tree02.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(tree02);
+
+let street = new Entity();
+street.addComponent(new GLTFShape("models/Street.glb"));
+street.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(street);
+
+
 let gara = new Entity();
 gara.addComponent(new GLTFShape("models/gara.glb"));
 gara.addComponent(
@@ -16,24 +65,6 @@ treeHouse.addComponent(
 );
 engine.addEntity(treeHouse);
 
-let tree = new Entity();
-tree.addComponent(new GLTFShape("models/Tree.glb"));
-tree.addComponent(
-  new Transform({
-    rotation: Quaternion.Euler(0, 180, 0),
-  })
-);
-engine.addEntity(tree);
-
-let street = new Entity();
-street.addComponent(new GLTFShape("models/Street.glb"));
-street.addComponent(
-  new Transform({
-    rotation: Quaternion.Euler(0, 180, 0),
-  })
-);
-engine.addEntity(street);
-
 let pentagonHouse = new Entity();
 pentagonHouse.addComponent(new GLTFShape("models/Pentagon_House.glb"));
 pentagonHouse.addComponent(
@@ -42,15 +73,6 @@ pentagonHouse.addComponent(
   })
 );
 engine.addEntity(pentagonHouse);
-
-let bookStore = new Entity();
-bookStore.addComponent(new GLTFShape("models/BookStore.glb"));
-bookStore.addComponent(
-  new Transform({
-    rotation: Quaternion.Euler(0, 180, 0),
-  })
-);
-engine.addEntity(bookStore);
 
 let oneColumnHouse = new Entity();
 oneColumnHouse.addComponent(new GLTFShape("models/OneColumnHouse.glb"));
@@ -61,14 +83,7 @@ oneColumnHouse.addComponent(
 );
 engine.addEntity(oneColumnHouse);
 
-let ground = new Entity();
-ground.addComponent(new GLTFShape("models/Ground.glb"));
-ground.addComponent(
-  new Transform({
-    rotation: Quaternion.Euler(0, 180, 0),
-  })
-);
-engine.addEntity(ground);
+
 
 let lotusHouse = new Entity();
 lotusHouse.addComponent(new GLTFShape("models/Lotus_House.glb"));
@@ -79,14 +94,14 @@ lotusHouse.addComponent(
 );
 engine.addEntity(lotusHouse);
 
-let adidas = new Entity();
-adidas.addComponent(new GLTFShape("models/Adidas.glb"));
-adidas.addComponent(
+let adistop = new Entity();
+adistop.addComponent(new GLTFShape("models/Adistop.glb"));
+adistop.addComponent(
   new Transform({
     rotation: Quaternion.Euler(0, 180, 0),
   })
 );
-engine.addEntity(adidas);
+engine.addEntity(adistop);
 
 let smartStore = new Entity();
 smartStore.addComponent(new GLTFShape("models/Smart_Store.glb"));
@@ -99,7 +114,7 @@ engine.addEntity(smartStore);
 
 
 let flyStore = new Entity();
-flyStore.addComponent(new GLTFShape("models/Fly_Store.glb"));
+flyStore.addComponent(new GLTFShape("models/Fly_Camera_Shop.glb"));
 flyStore.addComponent(
   new Transform({
     rotation: Quaternion.Euler(0, 180, 0),
@@ -148,9 +163,6 @@ circleShop.addComponent(
 );
 engine.addEntity(circleShop);
 
-
-
-
 let artHouse = new Entity();
 artHouse.addComponent(new GLTFShape("models/Art_House.glb"));
 artHouse.addComponent(
@@ -160,7 +172,14 @@ artHouse.addComponent(
 );
 engine.addEntity(artHouse);
 
-
+let artHouse01 = new Entity();
+artHouse01.addComponent(new GLTFShape("models/Art01_House.glb"));
+artHouse01.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(artHouse01);
 
 let mediaHouse = new Entity();
 mediaHouse.addComponent(new GLTFShape("models/Media_House.glb"));
@@ -191,4 +210,46 @@ boxHouse.addComponent(
 engine.addEntity(boxHouse);
 
 
+let nikeShop = new Entity();
+nikeShop.addComponent(new GLTFShape("models/Nike_Shop.glb"));
+nikeShop.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(nikeShop);
 
+
+let bearbrickStore = new Entity();
+bearbrickStore.addComponent(new GLTFShape("models/Bearbrick_Store.glb"));
+bearbrickStore.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(bearbrickStore);
+
+
+let tunnel = new Entity();
+tunnel.addComponent(new GLTFShape("models/Tunnel.glb"));
+tunnel.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(tunnel);
+
+
+
+let wipbookShop = new Entity();
+wipbookShop.addComponent(new GLTFShape("models/Wipbook_Shop.glb"));
+wipbookShop.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(wipbookShop);
+
+
+
+placeDoors()

@@ -14,6 +14,11 @@
     "beland-ecs": "^0.0.6-dev"
   },
   "dependencies": {
+    "@beland/ecs-scene-utils": "^0.0.2-dev",
+    "@beland/ui-scene-utils": "^0.0.1-development",
     "beland": "^1.0.1"
-  }
+  },
+  "bundleDependencies": [
+    "@beland/ecs-scene-utils"
+  ]
 }
