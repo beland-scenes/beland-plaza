@@ -11,7 +11,7 @@ engine.addEntity(collider);
 
 
 let collider1 = new Entity();
-collider1.addComponent(new GLTFShape("models/Collider1.glb"));
+collider1.addComponent(new GLTFShape("models/Collider01.glb"));
 collider1.addComponent(
   new Transform({
     rotation: Quaternion.Euler(0, 180, 0),
