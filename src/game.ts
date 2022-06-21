@@ -10,6 +10,16 @@ collider.addComponent(
 engine.addEntity(collider);
 
 
+let collider1 = new Entity();
+collider1.addComponent(new GLTFShape("models/Collider1.glb"));
+collider1.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(collider1)
+
+
 let ground = new Entity();
 ground.addComponent(new GLTFShape("models/Ground.glb"));
 ground.addComponent(
