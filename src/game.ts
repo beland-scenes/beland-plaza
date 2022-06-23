@@ -211,6 +211,17 @@ collider.addComponent(
 );
 engine.addEntity(collider);
 
+
+let collider2 = new Entity();
+collider2.addComponent(new GLTFShape("models/Shop_Collider.glb"));
+collider2.addComponent(
+  new Transform({
+    rotation: Quaternion.Euler(0, 180, 0),
+  })
+);
+engine.addEntity(collider2);
+
+
 // Animations
 const car01 = new Entity("car01");
 engine.addEntity(car01);
@@ -242,8 +253,8 @@ function addChandelier(name: string, position: Vector3) {
   chandelier.addComponentOrReplace(chandelierShape01);
 }
 
-addChandelier("Chandelier_01", new Vector3(262, 8, 172))
-addChandelier("Chandelier_02", new Vector3(273, 8, 130))
+addChandelier("Chandelier_01", new Vector3(262, 9, 172))
+addChandelier("Chandelier_02", new Vector3(273, 9, 130))
 
 
 placeDoors()
