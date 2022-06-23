@@ -1,4 +1,3 @@
-
 let lobby = new Entity();
 lobby.addComponent(new GLTFShape("models/Lobby.glb"));
 lobby.addComponent(
@@ -7,7 +6,6 @@ lobby.addComponent(
   })
 );
 engine.addEntity(lobby);
-
 
 let adistop_Shop = new Entity();
 adistop_Shop.addComponent(new GLTFShape("models/Adistop_Shop.glb"));
@@ -201,6 +199,7 @@ wipbook_Shop.addComponent(
   })
 );
 engine.addEntity(wipbook_Shop);
+
 let collider = new Entity();
 collider.addComponent(new GLTFShape("models/Collider.glb"));
 collider.addComponent(
@@ -209,3 +208,37 @@ collider.addComponent(
   })
 );
 engine.addEntity(collider);
+
+// Animations
+const car01 = new Entity("car01");
+engine.addEntity(car01);
+const transform6 = new Transform({
+  position: new Vector3(262, 0, 171),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1),
+});
+car01.addComponentOrReplace(transform6);
+const carShape01 = new GLTFShape("models/Car01_Anim.glb");
+carShape01.withCollisions = true;
+carShape01.isPointerBlocker = true;
+carShape01.visible = true;
+car01.addComponentOrReplace(carShape01);
+
+function addChandelier(name: string, position: Vector3) {
+  const chandelier = new Entity(name);
+  engine.addEntity(chandelier);
+  const transform7 = new Transform({
+    position: position,
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(1, 1, 1),
+  });
+  chandelier.addComponentOrReplace(transform7);
+  const chandelierShape01 = new GLTFShape("models/Chandelier01_Anim.glb");
+  chandelierShape01.withCollisions = true;
+  chandelierShape01.isPointerBlocker = true;
+  chandelierShape01.visible = true;
+  chandelier.addComponentOrReplace(chandelierShape01);
+}
+
+addChandelier("Chandelier_01", new Vector3(262, 10, 172))
+addChandelier("Chandelier_02", new Vector3(273, 10, 130))
