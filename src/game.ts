@@ -1,3 +1,5 @@
+import { placeDoors } from "./modules/doors";
+
 let lobby = new Entity();
 lobby.addComponent(new GLTFShape("models/Lobby.glb"));
 lobby.addComponent(
@@ -240,5 +242,27 @@ function addChandelier(name: string, position: Vector3) {
   chandelier.addComponentOrReplace(chandelierShape01);
 }
 
-addChandelier("Chandelier_01", new Vector3(262, 10, 172))
-addChandelier("Chandelier_02", new Vector3(273, 10, 130))
+addChandelier("Chandelier_01", new Vector3(262, 8, 172))
+addChandelier("Chandelier_02", new Vector3(273, 8, 130))
+
+
+placeDoors()
+
+
+function addChandelier2(name: string, position: Vector3) {
+  const chandelier = new Entity(name);
+  engine.addEntity(chandelier);
+  const transform7 = new Transform({
+    position: position,
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(1, 1, 1),
+  });
+  chandelier.addComponentOrReplace(transform7);
+  const chandelierShape01 = new GLTFShape("models/Chandelier02_Anim.glb");
+  chandelierShape01.withCollisions = true;
+  chandelierShape01.isPointerBlocker = true;
+  chandelierShape01.visible = true;
+  chandelier.addComponentOrReplace(chandelierShape01);
+}
+
+addChandelier2("Chandelier02_01", new Vector3(262, 10, 250))
