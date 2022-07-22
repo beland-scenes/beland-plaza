@@ -1,3 +1,4 @@
+import { buildBanners } from "./modules/banners";
 import { placeDoors } from "./modules/doors";
 
 let lobby = new Entity();
@@ -277,3 +278,6 @@ function addChandelier2(name: string, position: Vector3) {
 }
 
 addChandelier2("Chandelier02_01", new Vector3(262, 10, 250))
+
+
+buildBanners()
