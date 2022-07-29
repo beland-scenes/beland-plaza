@@ -1,5 +1,6 @@
 import { buildBanners } from "./modules/banners";
 import { placeDoors } from "./modules/doors";
+import { buildShopItems } from "./modules/shop";
 
 let lobby = new Entity();
 lobby.addComponent(new GLTFShape("models/Lobby.glb"));
@@ -281,3 +282,4 @@ addChandelier2("Chandelier02_01", new Vector3(262, 10, 250))
 
 
 buildBanners()
+buildShopItems()
